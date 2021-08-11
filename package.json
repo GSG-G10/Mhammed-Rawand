@@ -22,7 +22,8 @@
     "env2": "^2.2.2",
     "express": "^4.17.1",
     "jest": "^27.0.6",
-    "node-fetch": "^2.6.1"
+    "node-fetch": "^2.6.1",
+    "supertest": "^6.1.4"
   },
   "devDependencies": {
     "eslint": "^7.32.0"
