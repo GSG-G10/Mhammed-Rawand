@@ -14,6 +14,7 @@ const showImage = (response) => {
     renderedIndices.push(uniqueKey)
     image.src = response.results[uniqueKey].urls.small
     image.classList.add('img');
+    image.setAttribute( "alt" , "your image");
     content.appendChild(image)
   }
 }
