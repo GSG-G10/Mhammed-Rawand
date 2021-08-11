@@ -1,7 +1,4 @@
-*{
-    margin: 0;
-    padding: 0%;
-}
+
 body{
     height: 100vh;
 }
@@ -12,17 +9,17 @@ body{
     align-content: space-between;
     width: 100%;
     justify-content: center;
-   
+ 
 }
 
 .img{
 width: 32%;
-max-width: 400px;
-height: 400px;
+max-width: 350px;
+height: 350px;
 border-radius: 15px;
-margin: 15px 40px;
+margin-left: 1%;
 background-size:cover;
-
+margin-top: 15px;
 }
 
 .header{
@@ -34,9 +31,9 @@ background-size:cover;
 .logo{
     color: rgb(86, 16, 151);
     font-size: 35px;
-    /* padding-left: 20px; */
+   
     margin-right: auto;
-    margin-left: 6%;
+    margin-left: 10%;
     
 }
 .search{
@@ -64,18 +61,23 @@ background-size:cover;
     border-radius: 25px;
     padding: 10px 20px;
 }
-
 @media only screen and (max-width: 1450px) {
     .img{
         width: 32%;
-        /* max-width: 400px; */
+         max-width: 350px; 
         height: 400px;
-      margin-left: 1%;
+         margin-left: 1%;
         margin-top: 15px ;
         background-size:cover;
     }
 }
-
+@media only screen and (max-width: 900px) {
+   
+    .img{
+     width: 50%;
+     }
+   
+   } 
 @media only screen and (max-width: 600px) {
    .logo{
        font-size: 20px;
