@@ -1,13 +1,20 @@
-const input = document.getElementById("searchInput");
-input.oninput = () => {
-  console.log("in search");
-  console.log("input", input.value);
-  const value = input.value;
-  fetch(`/search?query=${value}`)
-    .then((response) => response.json())
-    .then((response) => {
-      // const resultsDiv = document.getElementById("");
-      // resultsDiv.appendChild()
-      console.log("response", response);
-    });
-};
+const searchInput = document.getElementById("searchInput");
+const btnSearch = document.querySelector('#btn-search');
+ const content =document.querySelector('.content');
+
+ const showImage = (response)=>{
+   const image = document.createElement('img')
+   image.src= response.results[1].urls.small
+   content.appendChild(image)
+}
+
+btnSearch.addEventListener('click',()=>{
+  fetch(`/input/${searchInput.value}`)
+  .then((response) => response.json())
+  .then(showImage)
+  
+    })
+
+
+  
+

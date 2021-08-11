@@ -1,11 +1,7 @@
 const router = require("express").Router();
-// const getHomePage = require("./getHomePage");
 const searchFor = require("./searchFor");
 const { serverError, error } = require("./error");
-
-// router.get("/home", getHomePage);
-router.get("/search", searchFor);
-    router.use(serverError);
-    router.use(error);
-
+router.get("/input/:q", searchFor);
+router.use(error);
+router.use(serverError);
 module.exports = router;
