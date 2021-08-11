@@ -7,16 +7,17 @@ body{
     flex-direction: row;
     align-content: space-between;
     width: 100%;
+    justify-content: center;
    
 }
 
 .img{
 width: 32%;
+max-width: 400px;
 height: 350px;
 border-radius: 15px;
-margin-left: 1%;
-margin-top: 15px;
-background-size: cover;
+margin: 15px 40px;
+background-size:cover;
 
 }
 
@@ -29,13 +30,16 @@ background-size: cover;
 .logo{
     color: rgb(86, 16, 151);
     font-size: 35px;
-    padding-left: 20px;
+    /* padding-left: 20px; */
+    margin-right: auto;
+    margin-left: 6%;
     
 }
 .search{
    
-    margin-left: 60%;
-    margin-top: 2%;
+    margin-left: auto;
+    margin-top: 1%;
+    margin-right: 6%
     
 }
 #searchInput{
