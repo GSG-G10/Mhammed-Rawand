@@ -25,7 +25,3 @@ btnSearch.addEventListener('click', () => {
     .then(showImage)
 
 })
-
-
-
-
