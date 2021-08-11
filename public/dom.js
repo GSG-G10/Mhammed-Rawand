@@ -5,14 +5,13 @@ const content = document.querySelector('.content');
 const showImage = (response) => {
   content.innerHTML = "";
   const renderedIndices = [];
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 9; i++) {
     const image = document.createElement('img')
     let uniqueKey;
     do {
       uniqueKey = Math.floor(Math.random() * 10)
     } while (renderedIndices.includes(uniqueKey))
     renderedIndices.push(uniqueKey)
-    // const randomNumber = Math.floor(Math.random() * 10);
     image.src = response.results[uniqueKey].urls.small
     image.classList.add('img');
     content.appendChild(image)
