@@ -4,8 +4,8 @@
 
 https://rawand-mohammed.herokuapp.com/
 # Team Member:
-Mohammed alrayyas
-Rawand Jaradh
+* Mohammed alrayyas
+* Rawand Jaradh
  # Berif description
  Our project is a photo studio and the user can search for any image he wants and show it to him.
  # User Journey
